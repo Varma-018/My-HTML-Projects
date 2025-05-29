@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./Signup Successful.html" method="post">
+        <style>
+            form{background-color: bisque; 
+                border-radius: 10px; 
+                padding: 20px; 
+                width: 400px; 
+                margin: auto;
+            }
+        </style>
+        <fieldset>
+            <style>
+                legend{border-radius: 5px; border-color: black; font-size: 35px;
+                    background-color: rgb(240, 183, 234);
+                }
+            </style>
+        <legend>Sign Up </legend>
+        <label for="Email">Email</label>
+        <input type="text" pattern="[a-z\d]+@(gmail|yahoo|outlook)+\.(com|in|org|edu|at|gov)"placeholder="Enter your Email"><br>
+        <!-- <input type="text" pattern="(?=.*[a-z])"><br> -->
+        <label for="Password">Password</label>
+        <input type="text" pattern="(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[!@#$%&])[A-Za-z\d@#$%?&]{8,16}"placeholder="Enter your Password"><br>
+        <label for="Date of birth">Date of birth</label>
+        <input type="text"pattern="(0[1-9]|[12][0-9]|3[01]).(0[1-9]|1[0-2]).\d{4}" placeholder="Enter your Date of Birth" required><br>
+        <input type="submit">
+        <input type="reset">
+        </fieldset>    
+    </form>
+</body>
+</html>
